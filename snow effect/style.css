@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    background: url('./bg.webp') center center;
+    background-size: cover;
+    height: 100vh;
+    width:100% ;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.snow{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./snow.png');
+    background-repeat: repeat;
+    z-index: 1;
+    animation: snow 30s infinite linear;
+}
+.snow1{
+    animation: snow1 30s infinite linear;
+}
+.snow2{
+    animation: snow2 30s infinite linear;
+}
+@keyframes snow1{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 100vh;
+    }
+}
+@keyframes snow2{
+    0%{
+        background-position: 0px -100px;
+    }
+    100%{
+        background-position: 0px 100vh;
+    }
+}
